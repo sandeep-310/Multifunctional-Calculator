@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap');
+ 
+*{
+    padding : 0px;
+    margin : 0px
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(30deg, black,rgb(27, 27, 28),rgb(43, 45, 45),rgb(76, 74, 74)
+    );
+    font-family: 'Merriweather', serif;
+}
+
+/***********************BASIC CALCULATOR******************/
+.Basic-Calcu{
+    width: 440px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid rgb(35, 35, 35);
+    border-radius: 12px;
+    background: transparent;
+    box-shadow: 3px 3px 3px rgba(182, 185, 190, 0.5);
+}
+.input{
+    display: flex;
+    margin-top: 50px;  
+}
+button{
+    background: transparent;
+    cursor: pointer;
+    margin: 14px 2px;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 29px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 7px rgb(159, 164, 174);
+}
+button:active {
+    box-shadow: 0px 0px rgb(159, 164, 174);
+    transform: translateY(3px);
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px 17px;
+}
+input{
+    margin-top: 30px;
+    width: 75%;
+    height: 70px;
+    background: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    text-align: right;
+    overflow: hidden;
+}
+.mode{
+    position: absolute;
+    margin: 0;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    margin: -35px 17px
+}
+
+/*****************AdVANCE CALCULATOR*********************/
+.Advanced-Calcu{
+    width: 440px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid rgb(35, 35, 35);
+    border-radius: 12px;
+    background: transparent;
+    box-shadow: 3px 3px 3px rgba(182, 185, 190, 0.5);
+}
+.exception{
+    padding: 4px;
+}
+
+.onClickClass{
+    display: none;
+}
+.special{
+    background-color: #ff9f0a;
+}
+.special-2{
+    background-color: #707070;
+}
